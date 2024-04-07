@@ -13,7 +13,9 @@ Metodologia
 Minha abordagem de pesquisa envolve uma combinação de revisão de literatura, análise de conteúdo qualitativa, desenvolvimento de questionários. 
 
 Como Contribuir
+
 Se você está interessado neste tema ou tem insights valiosos para compartilhar, ficarei feliz em receber sua contribuição! Sinta-se à vontade para abrir issues, sugerir melhorias ou até mesmo enviar pull requests.
 
 Contato
+
 Se você tiver alguma dúvida, sugestão ou simplesmente quiser discutir este projeto, não hesite em entrar em contato comigo. Você pode me encontrar por e-mail em gui.dallasvision@gmail.com.
