@@ -3,6 +3,7 @@ Projeto Modelo de prontidão Digital
 Bem-vindo ao repositório do meu projeto de mestrado! Este projeto é dedicado a explorar e compreender a transformação digital em universidades públicas a aprtir das tecnologias da Industria 4.0, um tema de extrema relevância na era atual da tecnologia. Meu trabalho de pesquisa busca fornecer insights valiosos sobre como as instituições de ensino superior podem se adaptar e prosperar no cenário digital em constante evolução.
 
 Objetivo do Projeto
+
 O objetivo principal deste projeto é propor um modelo de prontidão digital para universidades públicas. Estou focado em entender os seguintes aspectos:
 
 Identificar as categorias de elementos do modelo de prontidão digital específico para as tecnologias da Indústria 4.0.
