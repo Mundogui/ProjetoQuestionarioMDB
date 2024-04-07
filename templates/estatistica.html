@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+</head>
+    <body>
+        <h1>Estatísticas do Questionário</h1>
+
+        <p>Mediana: {{ median_values }}</p>
+        <p>Variância: {{ variance_values }}</p>
+        <p>Desvio Padrão: {{ std_deviation_values }}</p>
+        <br>
+        <form action="/processar_dados" method="post">
+            <label for="dados">Digite os números separados por espaços:</label>
+            <input type="text" name="dados" required>
+            <button type="submit">Processar</button>
+        </form>
+</body>
+</html>

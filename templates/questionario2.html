@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db; /* Azul */
+    color: #fff;
+    background-color: #3498db; /* Azul */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #3498db; /* Azul */
+}
+ </style>
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+</head>
+<body>
+    <form id="meuFormulario" method="post" action="/" class="container">
+    <h1>Auxilie a Gestão ao responder o Diagnóstico de Prontidão Digital</h1>
+    <div class="row">
+      <label for="email" class="label">E-mail:</label>
+      <input type="email" name="email" required class="input">
+    </div>
+    <div class="row">
+      <label for="tempo" class="label">Tempo de trabalho na Instituição:</label>
+      <input type="text" name="tempo" required class="input">
+    </div>
+    <div class="row">
+        <label for="setor" class="label">Setor ou Instituto:</label>
+    <select name="setor" id="setor" class="input" required>
+        <option value="" disabled selected>Selecione um setor</option>
+        <!-- Grupo 1 -->
+        <optgroup label="UFMT - Campus Universitário do Araguaia">
+            <option value="Pro-Reitoria">Pró-Reitoria</option>
+            <option value="GAP">GAP-Gerência de Administração e Planejamento</option>
+            <option value="GGE">GGE-Gerência de Graduação e Extensão</option>
+            <option value="GPGP">GPGP-Gerência de Pós Graduação e Pesquisa</option>
+            <option value="ICBS">ICBS-Instituto de Ciências Biológicas e da Saúde</option>
+            <option value="ICET">ICET-Instituto de Ciências Exatas e da Terra</option>
+            <option value="ICHS">ICHS-Instituto de Ciências Humanas e Sociais</option>
+            <option value="Prefeitura">Prefeitura</option>
+
+        </optgroup>
+
+        <!-- Adicione mais grupos e subgrupos conforme necessário -->
+    </select>
+    </div>
+    <br>
+    <label class="label">Servidor:</label>
+      <input type="radio" name="tipo_usuario" value="professor" required>
+      <label for="professor" class="label">Professor</label>
+      <input type="radio" name="tipo_usuario" value="tecnico" required>
+      <label for="tecnico" class="label">Técnico</label>
+        <br>
+        <h6>Marque 0 para insatisfatório e 10 satisfatorio</h6>
+        <h2>Estratégia</h2>
+    <p>Questão 1: Em sua percepção, a universidade utiliza de estratégias para melhoria da comunicação interna e interinstitucional sobre ensino, pesquisa, extensão e gestão?</p>
+    <input type="radio" id="opcao_estrategia1_0" name="estrategia1" value="0" required> <label for="opcao_estrategia1_0">0</label>
+    <input type="radio" id="opcao_estrategia1_1" name="estrategia1" value="1" required> <label for="opcao_estrategia1_1">1</label>
+    <input type="radio" id="opcao_estrategia1_2" name="estrategia1" value="2" required> <label for="opcao_estrategia1_2">2</label>
+    <input type="radio" id="opcao_estrategia1_3" name="estrategia1" value="3" required> <label for="opcao_estrategia1_3">3</label>
+    <input type="radio" id="opcao_estrategia1_4" name="estrategia1" value="4" required> <label for="opcao_estrategia1_4">4</label>
+    <input type="radio" id="opcao_estrategia1_5" name="estrategia1" value="5" required> <label for="opcao_estrategia1_5">5</label>
+    <input type="radio" id="opcao_estrategia1_6" name="estrategia1" value="6" required> <label for="opcao_estrategia1_6">6</label>
+    <input type="radio" id="opcao_estrategia1_7" name="estrategia1" value="7" required> <label for="opcao_estrategia1_7">7</label>
+    <input type="radio" id="opcao_estrategia1_8" name="estrategia1" value="8" required> <label for="opcao_estrategia1_8">8</label>
+    <input type="radio" id="opcao_estrategia1_9" name="estrategia1" value="9" required> <label for="opcao_estrategia1_9">9</label>
+    <input type="radio" id="opcao_estrategia1_10" name="estrategia1" value="10" required> <label for="opcao_estrategia1_10">10</label>
+
+    <p>Questão 2: Em termos estratégicos, em que nível a universidade emprega serviços de ensino, pesquisa, extensão e gestão baseados em nuvem?</p>
+    <input type="radio" id="opcao_estrategia2_0" name="estrategia2" value="0" required> <label for="opcao_estrategia2_0">0</label>
+    <input type="radio" id="opcao_estrategia2_1" name="estrategia2" value="1" required> <label for="opcao_estrategia2_1">1</label>
+    <input type="radio" id="opcao_estrategia2_2" name="estrategia2" value="2" required> <label for="opcao_estrategia2_2">2</label>
+    <input type="radio" id="opcao_estrategia2_3" name="estrategia2" value="3" required> <label for="opcao_estrategia2_3">3</label>
+    <input type="radio" id="opcao_estrategia2_4" name="estrategia2" value="4" required> <label for="opcao_estrategia2_4">4</label>
+    <input type="radio" id="opcao_estrategia2_5" name="estrategia2" value="5" required> <label for="opcao_estrategia2_5">5</label>
+    <input type="radio" id="opcao_estrategia2_6" name="estrategia2" value="6" required> <label for="opcao_estrategia2_6">6</label>
+    <input type="radio" id="opcao_estrategia2_7" name="estrategia2" value="7" required> <label for="opcao_estrategia2_7">7</label>
+    <input type="radio" id="opcao_estrategia2_8" name="estrategia2" value="8" required> <label for="opcao_estrategia2_8">8</label>
+    <input type="radio" id="opcao_estrategia2_9" name="estrategia2" value="9" required> <label for="opcao_estrategia2_9">9</label>
+    <input type="radio" id="opcao_estrategia2_10" name="estrategia2" value="10" required> <label for="opcao_estrategia2_10">10</label>
+
+    <p>Questão 3: A universidade tem trabalhado no planejamento para automatização e integração dos sistemas de gestão acadêmicos e administrativos?</p>
+    <input type="radio" id="opcao_estrategia3_0" name="estrategia3" value="0" required> <label for="opcao_estrategia3_0">0</label>
+    <input type="radio" id="opcao_estrategia3_1" name="estrategia3" value="1" required> <label for="opcao_estrategia3_1">1</label>
+    <input type="radio" id="opcao_estrategia3_2" name="estrategia3" value="2" required> <label for="opcao_estrategia3_2">2</label>
+    <input type="radio" id="opcao_estrategia3_3" name="estrategia3" value="3" required> <label for="opcao_estrategia3_3">3</label>
+    <input type="radio" id="opcao_estrategia3_4" name="estrategia3" value="4" required> <label for="opcao_estrategia3_4">4</label>
+    <input type="radio" id="opcao_estrategia3_5" name="estrategia3" value="5" required> <label for="opcao_estrategia3_5">5</label>
+    <input type="radio" id="opcao_estrategia3_6" name="estrategia3" value="6" required> <label for="opcao_estrategia3_6">6</label>
+    <input type="radio" id="opcao_estrategia3_7" name="estrategia3" value="7" required> <label for="opcao_estrategia3_7">7</label>
+    <input type="radio" id="opcao_estrategia3_8" name="estrategia3" value="8" required> <label for="opcao_estrategia3_8">8</label>
+    <input type="radio" id="opcao_estrategia3_9" name="estrategia3" value="9" required> <label for="opcao_estrategia3_9">9</label>
+    <input type="radio" id="opcao_estrategia3_10" name="estrategia3" value="10" required> <label for="opcao_estrategia3_10">10</label>
+
+
+    <p>Questão 4: Na sua visão a universidade possui estratégias para apoiar invenções e gerações de patentes?</p>
+    <input type="radio" id="opcao_estrategia4_0" name="estrategia4" value="0" required> <label for="opcao_estrategia4_0">0</label>
+    <input type="radio" id="opcao_estrategia4_1" name="estrategia4" value="1" required> <label for="opcao_estrategia4_1">1</label>
+    <input type="radio" id="opcao_estrategia4_2" name="estrategia4" value="2" required> <label for="opcao_estrategia4_2">2</label>
+    <input type="radio" id="opcao_estrategia4_3" name="estrategia4" value="3" required> <label for="opcao_estrategia4_3">3</label>
+    <input type="radio" id="opcao_estrategia4_4" name="estrategia4" value="4" required> <label for="opcao_estrategia4_4">4</label>
+    <input type="radio" id="opcao_estrategia4_5" name="estrategia4" value="5" required> <label for="opcao_estrategia4_5">5</label>
+    <input type="radio" id="opcao_estrategia4_6" name="estrategia4" value="6" required> <label for="opcao_estrategia4_6">6</label>
+    <input type="radio" id="opcao_estrategia4_7" name="estrategia4" value="7" required> <label for="opcao_estrategia4_7">7</label>
+    <input type="radio" id="opcao_estrategia4_8" name="estrategia4" value="8" required> <label for="opcao_estrategia4_8">8</label>
+    <input type="radio" id="opcao_estrategia4_9" name="estrategia4" value="9" required> <label for="opcao_estrategia4_9">9</label>
+    <input type="radio" id="opcao_estrategia4_10" name="estrategia4" value="10" required> <label for="opcao_estrategia4_10">10</label>
+
+    <p>Questão 5: Na sua percepção a transformação digital para a Indústria 4.0 poderia melhorar a competitividade da universidade no cenário internacional?</p>
+    <input type="radio" id="opcao_estrategia5_0" name="estrategia5" value="0" required> <label for="opcao_estrategia5_0">0</label>
+    <input type="radio" id="opcao_estrategia5_1" name="estrategia5" value="1" required> <label for="opcao_estrategia5_1">1</label>
+    <input type="radio" id="opcao_estrategia5_2" name="estrategia5" value="2" required> <label for="opcao_estrategia5_2">2</label>
+    <input type="radio" id="opcao_estrategia5_3" name="estrategia5" value="3" required> <label for="opcao_estrategia5_3">3</label>
+    <input type="radio" id="opcao_estrategia5_4" name="estrategia5" value="4" required> <label for="opcao_estrategia5_4">4</label>
+    <input type="radio" id="opcao_estrategia5_5" name="estrategia5" value="5" required> <label for="opcao_estrategia5_5">5</label>
+    <input type="radio" id="opcao_estrategia5_6" name="estrategia5" value="6" required> <label for="opcao_estrategia5_6">6</label>
+    <input type="radio" id="opcao_estrategia5_7" name="estrategia5" value="7" required> <label for="opcao_estrategia5_7">7</label>
+    <input type="radio" id="opcao_estrategia5_8" name="estrategia5" value="8" required> <label for="opcao_estrategia5_8">8</label>
+    <input type="radio" id="opcao_estrategia5_9" name="estrategia5" value="9" required> <label for="opcao_estrategia5_9">9</label>
+    <input type="radio" id="opcao_estrategia5_10" name="estrategia5" value="10" required> <label for="opcao_estrategia5_10">10</label>
+
+    <p>Questão 6: A universidade possui um escritório de gerenciamento de projetos?</p>
+    <input type="radio" id="opcao_estrategia6_0" name="estrategia6" value="0" required> <label for="opcao_estrategia6_0">0</label>
+    <input type="radio" id="opcao_estrategia6_1" name="estrategia6" value="1" required> <label for="opcao_estrategia6_1">1</label>
+    <input type="radio" id="opcao_estrategia6_2" name="estrategia6" value="2" required> <label for="opcao_estrategia6_2">2</label>
+    <input type="radio" id="opcao_estrategia6_3" name="estrategia6" value="3" required> <label for="opcao_estrategia6_3">3</label>
+    <input type="radio" id="opcao_estrategia6_4" name="estrategia6" value="4" required> <label for="opcao_estrategia6_4">4</label>
+    <input type="radio" id="opcao_estrategia6_5" name="estrategia6" value="5" required> <label for="opcao_estrategia6_5">5</label>
+    <input type="radio" id="opcao_estrategia6_6" name="estrategia6" value="6" required> <label for="opcao_estrategia6_6">6</label>
+    <input type="radio" id="opcao_estrategia6_7" name="estrategia6" value="7" required> <label for="opcao_estrategia6_7">7</label>
+    <input type="radio" id="opcao_estrategia6_8" name="estrategia6" value="8" required> <label for="opcao_estrategia6_8">8</label>
+    <input type="radio" id="opcao_estrategia6_9" name="estrategia6" value="9" required> <label for="opcao_estrategia6_9">9</label>
+    <input type="radio" id="opcao_estrategia6_10" name="estrategia6" value="10" required> <label for="opcao_estrategia6_10">10</label>
+
+    <h2>Processos</h2>
+    <p>Questão 7: Na sua percepção, os processos estão sendo implementados gradativamente para coletar e analisar dados relevantes para a gestão acadêmica e administrativa?</p>
+    <input type="radio" id="opcao_processo1_0" name="processo1" value="0" required> <label for="opcao_processo1_0">0</label>
+    <input type="radio" id="opcao_processo1_1" name="processo1" value="1" required> <label for="opcao_processo1_1">1</label>
+    <input type="radio" id="opcao_processo1_2" name="processo1" value="2" required> <label for="opcao_processo1_2">2</label>
+    <input type="radio" id="opcao_processo1_3" name="processo1" value="3" required> <label for="opcao_processo1_3">3</label>
+    <input type="radio" id="opcao_processo1_4" name="processo1" value="4" required> <label for="opcao_processo1_4">4</label>
+    <input type="radio" id="opcao_processo1_5" name="processo1" value="5" required> <label for="opcao_processo1_5">5</label>
+    <input type="radio" id="opcao_processo1_6" name="processo1" value="6" required> <label for="opcao_processo1_6">6</label>
+    <input type="radio" id="opcao_processo1_7" name="processo1" value="7" required> <label for="opcao_processo1_7">7</label>
+    <input type="radio" id="opcao_processo1_8" name="processo1" value="8" required> <label for="opcao_processo1_8">8</label>
+    <input type="radio" id="opcao_processo1_9" name="processo1" value="9" required> <label for="opcao_processo1_9">9</label>
+    <input type="radio" id="opcao_processo1_10" name="processo1" value="10" required> <label for="opcao_processo1_10">10</label>
+
+    <p>Questão 8: Na universidade existem processos automatizados que visam identificar e solucionar problemas acadêmicos, como a evasão de alunos?</p>
+    <input type="radio" id="opcao_processo2_0" name="processo2" value="0" required> <label for="opcao_processo2_0">0</label>
+    <input type="radio" id="opcao_processo2_1" name="processo2" value="1" required> <label for="opcao_processo2_1">1</label>
+    <input type="radio" id="opcao_processo2_2" name="processo2" value="2" required> <label for="opcao_processo2_2">2</label>
+    <input type="radio" id="opcao_processo2_3" name="processo2" value="3" required> <label for="opcao_processo2_3">3</label>
+    <input type="radio" id="opcao_processo2_4" name="processo2" value="4" required> <label for="opcao_processo2_4">4</label>
+    <input type="radio" id="opcao_processo2_5" name="processo2" value="5" required> <label for="opcao_processo2_5">5</label>
+    <input type="radio" id="opcao_processo2_6" name="processo2" value="6" required> <label for="opcao_processo2_6">6</label>
+    <input type="radio" id="opcao_processo2_7" name="processo2" value="7" required> <label for="opcao_processo2_7">7</label>
+    <input type="radio" id="opcao_processo2_8" name="processo2" value="8" required> <label for="opcao_processo2_8">8</label>
+    <input type="radio" id="opcao_processo2_9" name="processo2" value="9" required> <label for="opcao_processo2_9">9</label>
+    <input type="radio" id="opcao_processo2_10" name="processo2" value="10" required> <label for="opcao_processo2_10">10</label>
+
+    <p>Questão 9: Em qual nível os processos estão sendo implementados para permitir a personalização da experiência dos alunos pós-matricula?</p>
+    <input type="radio" id="opcao_processo3_0" name="processo3" value="0" required> <label for="opcao_processo3_0">0</label>
+    <input type="radio" id="opcao_processo3_1" name="processo3" value="1" required> <label for="opcao_processo3_1">1</label>
+    <input type="radio" id="opcao_processo3_2" name="processo3" value="2" required> <label for="opcao_processo3_2">2</label>
+    <input type="radio" id="opcao_processo3_3" name="processo3" value="3" required> <label for="opcao_processo3_3">3</label>
+    <input type="radio" id="opcao_processo3_4" name="processo3" value="4" required> <label for="opcao_processo3_4">4</label>
+    <input type="radio" id="opcao_processo3_5" name="processo3" value="5" required> <label for="opcao_processo3_5">5</label>
+    <input type="radio" id="opcao_processo3_6" name="processo3" value="6" required> <label for="opcao_processo3_6">6</label>
+    <input type="radio" id="opcao_processo3_7" name="processo3" value="7" required> <label for="opcao_processo3_7">7</label>
+    <input type="radio" id="opcao_processo3_8" name="processo3" value="8" required> <label for="opcao_processo3_8">8</label>
+    <input type="radio" id="opcao_processo3_9" name="processo3" value="9" required> <label for="opcao_processo3_9">9</label>
+    <input type="radio" id="opcao_processo3_10" name="processo3" value="10" required> <label for="opcao_processo3_10">10</label>
+
+    <p>Questão 10: Na sua visão os principais processos acadêmicos são projetados para facilitar o compartilhamento ágil de informações dentro da universidade e com outras instituições de ensino e pesquisa?</p>
+    <input type="radio" id="opcao_processo4_0" name="processo4" value="0" required> <label for="opcao_processo4_0">0</label>
+    <input type="radio" id="opcao_processo4_1" name="processo4" value="1" required> <label for="opcao_processo4_1">1</label>
+    <input type="radio" id="opcao_processo4_2" name="processo4" value="2" required> <label for="opcao_processo4_2">2</label>
+    <input type="radio" id="opcao_processo4_3" name="processo4" value="3" required> <label for="opcao_processo4_3">3</label>
+    <input type="radio" id="opcao_processo4_4" name="processo4" value="4" required> <label for="opcao_processo4_4">4</label>
+    <input type="radio" id="opcao_processo4_5" name="processo4" value="5" required> <label for="opcao_processo4_5">5</label>
+    <input type="radio" id="opcao_processo4_6" name="processo4" value="6" required> <label for="opcao_processo4_6">6</label>
+    <input type="radio" id="opcao_processo4_7" name="processo4" value="7" required> <label for="opcao_processo4_7">7</label>
+    <input type="radio" id="opcao_processo4_8" name="processo4" value="8" required> <label for="opcao_processo4_8">8</label>
+    <input type="radio" id="opcao_processo4_9" name="processo4" value="9" required> <label for="opcao_processo4_9">9</label>
+    <input type="radio" id="opcao_processo4_10" name="processo4" value="10" required> <label for="opcao_processo4_10">10</label>
+
+    <p>Questão 11: A universidade utiliza recursos de computação visual, como sistemas de supervisão, realidade virtual e realidade aumentada, para apoiar as operações acadêmicas?</p>
+    <input type="radio" id="opcao_processo5_0" name="processo5" value="0" required> <label for="opcao_processo5_0">0</label>
+    <input type="radio" id="opcao_processo5_1" name="processo5" value="1" required> <label for="opcao_processo5_1">1</label>
+    <input type="radio" id="opcao_processo5_2" name="processo5" value="2" required> <label for="opcao_processo5_2">2</label>
+    <input type="radio" id="opcao_processo5_3" name="processo5" value="3" required> <label for="opcao_processo5_3">3</label>
+    <input type="radio" id="opcao_processo5_4" name="processo5" value="4" required> <label for="opcao_processo5_4">4</label>
+    <input type="radio" id="opcao_processo5_5" name="processo5" value="5" required> <label for="opcao_processo5_5">5</label>
+    <input type="radio" id="opcao_processo5_6" name="processo5" value="6" required> <label for="opcao_processo5_6">6</label>
+    <input type="radio" id="opcao_processo5_7" name="processo5" value="7" required> <label for="opcao_processo5_7">7</label>
+    <input type="radio" id="opcao_processo5_8" name="processo5" value="8" required> <label for="opcao_processo5_8">8</label>
+    <input type="radio" id="opcao_processo5_9" name="processo5" value="9" required> <label for="opcao_processo5_9">9</label>
+    <input type="radio" id="opcao_processo5_10" name="processo5" value="10" required> <label for="opcao_processo5_10">10</label>
+
+    <p>Questão 12: Os processos acadêmicos são capazes de operar de forma autônoma, auxiliados por sistemas de aprendizado de máquina?</p>
+    <input type="radio" id="opcao_processo6_0" name="processo6" value="0" required> <label for="opcao_processo6_0">0</label>
+    <input type="radio" id="opcao_processo6_1" name="processo6" value="1" required> <label for="opcao_processo6_1">1</label>
+    <input type="radio" id="opcao_processo6_2" name="processo6" value="2" required> <label for="opcao_processo6_2">2</label>
+    <input type="radio" id="opcao_processo6_3" name="processo6" value="3" required> <label for="opcao_processo6_3">3</label>
+    <input type="radio" id="opcao_processo6_4" name="processo6" value="4" required> <label for="opcao_processo6_4">4</label>
+    <input type="radio" id="opcao_processo6_5" name="processo6" value="5" required> <label for="opcao_processo6_5">5</label>
+    <input type="radio" id="opcao_processo6_6" name="processo6" value="6" required> <label for="opcao_processo6_6">6</label>
+    <input type="radio" id="opcao_processo6_7" name="processo6" value="7" required> <label for="opcao_processo6_7">7</label>
+    <input type="radio" id="opcao_processo6_8" name="processo6" value="8" required> <label for="opcao_processo6_8">8</label>
+    <input type="radio" id="opcao_processo6_9" name="processo6" value="9" required> <label for="opcao_processo6_9">9</label>
+    <input type="radio" id="opcao_processo6_10" name="processo6" value="10" required> <label for="opcao_processo6_10">10</label>
+
+    <h2>Infraestrutura</h2>
+    <p>Questão 13: Como você avaliaria a infraestrutura de TI da universidade em termos de funcionalidades como controle de máquinas/sistemas por meio da tecnologia, comunicação máquina a máquina e interoperabilidade entre sistemas?</p>
+    <input type="radio" id="opcao_infra1_0" name="infra1" value="0" required> <label for="opcao_infra1_0">0</label>
+    <input type="radio" id="opcao_infra1_1" name="infra1" value="1" required> <label for="opcao_infra1_1">1</label>
+    <input type="radio" id="opcao_infra1_2" name="infra1" value="2" required> <label for="opcao_infra1_2">2</label>
+    <input type="radio" id="opcao_infra1_3" name="infra1" value="3" required> <label for="opcao_infra1_3">3</label>
+    <input type="radio" id="opcao_infra1_4" name="infra1" value="4" required> <label for="opcao_infra1_4">4</label>
+    <input type="radio" id="opcao_infra1_5" name="infra1" value="5" required> <label for="opcao_infra1_5">5</label>
+    <input type="radio" id="opcao_infra1_6" name="infra1" value="6" required> <label for="opcao_infra1_6">6</label>
+    <input type="radio" id="opcao_infra1_7" name="infra1" value="7" required> <label for="opcao_infra1_7">7</label>
+    <input type="radio" id="opcao_infra1_8" name="infra1" value="8" required> <label for="opcao_infra1_8">8</label>
+    <input type="radio" id="opcao_infra1_9" name="infra1" value="9" required> <label for="opcao_infra1_9">9</label>
+    <input type="radio" id="opcao_infra1_10" name="infra1" value="10" required> <label for="opcao_infra1_10">10</label>
+
+    <p>Questão 14: A universidade possui infraestrutura de TI apta a oferecer serviços na nuvem que auxiliam ao ensino, pesquisa, extensão e gestão?</p>
+    <input type="radio" id="opcao_infra2_0" name="infra2" value="0" required> <label for="opcao_infra2_0">0</label>
+    <input type="radio" id="opcao_infra2_1" name="infra2" value="1" required> <label for="opcao_infra2_1">1</label>
+    <input type="radio" id="opcao_infra2_2" name="infra2" value="2" required> <label for="opcao_infra2_2">2</label>
+    <input type="radio" id="opcao_infra2_3" name="infra2" value="3" required> <label for="opcao_infra2_3">3</label>
+    <input type="radio" id="opcao_infra2_4" name="infra2" value="4" required> <label for="opcao_infra2_4">4</label>
+    <input type="radio" id="opcao_infra2_5" name="infra2" value="5" required> <label for="opcao_infra2_5">5</label>
+    <input type="radio" id="opcao_infra2_6" name="infra2" value="6" required> <label for="opcao_infra2_6">6</label>
+    <input type="radio" id="opcao_infra2_7" name="infra2" value="7" required> <label for="opcao_infra2_7">7</label>
+    <input type="radio" id="opcao_infra2_8" name="infra2" value="8" required> <label for="opcao_infra2_8">8</label>
+    <input type="radio" id="opcao_infra2_9" name="infra2" value="9" required> <label for="opcao_infra2_9">9</label>
+    <input type="radio" id="opcao_infra2_10" name="infra2" value="10" required> <label for="opcao_infra2_10">10</label>
+
+    <p>Questão 15: A universidade utiliza dispositivos como impressoras 3D como parte de sua infraestrutura de ensino e pesquisa?</p>
+    <input type="radio" id="opcao_infra3_0" name="infra3" value="0" required> <label for="opcao_infra3_0">0</label>
+    <input type="radio" id="opcao_infra3_1" name="infra3" value="1" required> <label for="opcao_infra3_1">1</label>
+    <input type="radio" id="opcao_infra3_2" name="infra3" value="2" required> <label for="opcao_infra3_2">2</label>
+    <input type="radio" id="opcao_infra3_3" name="infra3" value="3" required> <label for="opcao_infra3_3">3</label>
+    <input type="radio" id="opcao_infra3_4" name="infra3" value="4" required> <label for="opcao_infra3_4">4</label>
+    <input type="radio" id="opcao_infra3_5" name="infra3" value="5" required> <label for="opcao_infra3_5">5</label>
+    <input type="radio" id="opcao_infra3_6" name="infra3" value="6" required> <label for="opcao_infra3_6">6</label>
+    <input type="radio" id="opcao_infra3_7" name="infra3" value="7" required> <label for="opcao_infra3_7">7</label>
+    <input type="radio" id="opcao_infra3_8" name="infra3" value="8" required> <label for="opcao_infra3_8">8</label>
+    <input type="radio" id="opcao_infra3_9" name="infra3" value="9" required> <label for="opcao_infra3_9">9</label>
+    <input type="radio" id="opcao_infra3_10" name="infra3" value="10" required> <label for="opcao_infra3_10">10</label>
+
+    <p>Questão 16: Até que ponto a universidade planejou, está implementando ou já implementou soluções de segurança de TI em áreas como armazenamento interno de dados, serviços em nuvem e comunicações internas e externas?</p>
+    <input type="radio" id="opcao_infra4_0" name="infra4" value="0" required> <label for="opcao_infra4_0">0</label>
+    <input type="radio" id="opcao_infra4_1" name="infra4" value="1" required> <label for="opcao_infra4_1">1</label>
+    <input type="radio" id="opcao_infra4_2" name="infra4" value="2" required> <label for="opcao_infra4_2">2</label>
+    <input type="radio" id="opcao_infra4_3" name="infra4" value="3" required> <label for="opcao_infra4_3">3</label>
+    <input type="radio" id="opcao_infra4_4" name="infra4" value="4" required> <label for="opcao_infra4_4">4</label>
+    <input type="radio" id="opcao_infra4_5" name="infra4" value="5" required> <label for="opcao_infra4_5">5</label>
+    <input type="radio" id="opcao_infra4_6" name="infra4" value="6" required> <label for="opcao_infra4_6">6</label>
+    <input type="radio" id="opcao_infra4_7" name="infra4" value="7" required> <label for="opcao_infra4_7">7</label>
+    <input type="radio" id="opcao_infra4_8" name="infra4" value="8" required> <label for="opcao_infra4_8">8</label>
+    <input type="radio" id="opcao_infra4_9" name="infra4" value="9" required> <label for="opcao_infra4_9">9</label>
+    <input type="radio" id="opcao_infra4_10" name="infra4" value="10" required> <label for="opcao_infra4_10">10</label>
+
+    <p>Questão 17: Na sua visão, as instalações acadêmicas possuem sistemas embarcados (IOT) que permitem a coleta de dados, processamento e comunicação entre si e com outros sistemas acadêmicos?</p>
+    <input type="radio" id="opcao_infra5_0" name="infra5" value="0" required> <label for="opcao_infra5_0">0</label>
+    <input type="radio" id="opcao_infra5_1" name="infra5" value="1" required> <label for="opcao_infra5_1">1</label>
+    <input type="radio" id="opcao_infra5_2" name="infra5" value="2" required> <label for="opcao_infra5_2">2</label>
+    <input type="radio" id="opcao_infra5_3" name="infra5" value="3" required> <label for="opcao_infra5_3">3</label>
+    <input type="radio" id="opcao_infra5_4" name="infra5" value="4" required> <label for="opcao_infra5_4">4</label>
+    <input type="radio" id="opcao_infra5_5" name="infra5" value="5" required> <label for="opcao_infra5_5">5</label>
+    <input type="radio" id="opcao_infra5_6" name="infra5" value="6" required> <label for="opcao_infra5_6">6</label>
+    <input type="radio" id="opcao_infra5_7" name="infra5" value="7" required> <label for="opcao_infra5_7">7</label>
+    <input type="radio" id="opcao_infra5_8" name="infra5" value="8" required> <label for="opcao_infra5_8">8</label>
+    <input type="radio" id="opcao_infra5_9" name="infra5" value="9" required> <label for="opcao_infra5_9">9</label>
+    <input type="radio" id="opcao_infra5_10" name="infra5" value="10" required> <label for="opcao_infra5_10">10</label>
+
+    <p>Questão 18: As instalações acadêmicas estão equipadas com tecnologias de inteligência artificial que possibilitam a melhoria contínua e a tomada de decisões autônomas?</p>
+    <input type="radio" id="opcao_infra6_0" name="infra6" value="0" required> <label for="opcao_infra6_0">0</label>
+    <input type="radio" id="opcao_infra6_1" name="infra6" value="1" required> <label for="opcao_infra6_1">1</label>
+    <input type="radio" id="opcao_infra6_2" name="infra6" value="2" required> <label for="opcao_infra6_2">2</label>
+    <input type="radio" id="opcao_infra6_3" name="infra6" value="3" required> <label for="opcao_infra6_3">3</label>
+    <input type="radio" id="opcao_infra6_4" name="infra6" value="4" required> <label for="opcao_infra6_4">4</label>
+    <input type="radio" id="opcao_infra6_5" name="infra6" value="5" required> <label for="opcao_infra6_5">5</label>
+    <input type="radio" id="opcao_infra6_6" name="infra6" value="6" required> <label for="opcao_infra6_6">6</label>
+    <input type="radio" id="opcao_infra6_7" name="infra6" value="7" required> <label for="opcao_infra6_7">7</label>
+    <input type="radio" id="opcao_infra6_8" name="infra6" value="8" required> <label for="opcao_infra6_8">8</label>
+    <input type="radio" id="opcao_infra6_9" name="infra6" value="9" required> <label for="opcao_infra6_9">9</label>
+    <input type="radio" id="opcao_infra6_10" name="infra6" value="10" required> <label for="opcao_infra6_10">10</label>
+
+
+    <h2>Tecnologia</h2>
+    <p>Questão 19: Em que nível você percebe que os processos acadêmicos e administrativos estão automatizados por meio de tecnologias para transformação digital?</p>
+    <input type="radio" id="opcao_tec1_0" name="tec1" value="0" required> <label for="opcao_tec1_0">0</label>
+    <input type="radio" id="opcao_tec1_1" name="tec1" value="1" required> <label for="opcao_tec1_1">1</label>
+    <input type="radio" id="opcao_tec1_2" name="tec1" value="2" required> <label for="opcao_tec1_2">2</label>
+    <input type="radio" id="opcao_tec1_3" name="tec1" value="3" required> <label for="opcao_tec1_3">3</label>
+    <input type="radio" id="opcao_tec1_4" name="tec1" value="4" required> <label for="opcao_tec1_4">4</label>
+    <input type="radio" id="opcao_tec1_5" name="tec1" value="5" required> <label for="opcao_tec1_5">5</label>
+    <input type="radio" id="opcao_tec1_6" name="tec1" value="6" required> <label for="opcao_tec1_6">6</label>
+    <input type="radio" id="opcao_tec1_7" name="tec1" value="7" required> <label for="opcao_tec1_7">7</label>
+    <input type="radio" id="opcao_tec1_8" name="tec1" value="8" required> <label for="opcao_tec1_8">8</label>
+    <input type="radio" id="opcao_tec1_9" name="tec1" value="9" required> <label for="opcao_tec1_9">9</label>
+    <input type="radio" id="opcao_tec1_10" name="tec1" value="10" required> <label for="opcao_tec1_10">10</label>
+
+    <p>Questão 20: Na sua percepção, a universidade emprega alguma das tecnologias como análise de dados e inteligência artificial, tecnologias móveis, nuvem, cybersegurança e outras, para impulsionar a pesquisa, o ensino e as operações administrativas?</p>
+    <input type="radio" id="opcao_tec2_0" name="tec2" value="0" required> <label for="opcao_tec2_0">0</label>
+    <input type="radio" id="opcao_tec2_1" name="tec2" value="1" required> <label for="opcao_tec2_1">1</label>
+    <input type="radio" id="opcao_tec2_2" name="tec2" value="2" required> <label for="opcao_tec2_2">2</label>
+    <input type="radio" id="opcao_tec2_3" name="tec2" value="3" required> <label for="opcao_tec2_3">3</label>
+    <input type="radio" id="opcao_tec2_4" name="tec2" value="4" required> <label for="opcao_tec2_4">4</label>
+    <input type="radio" id="opcao_tec2_5" name="tec2" value="5" required> <label for="opcao_tec2_5">5</label>
+    <input type="radio" id="opcao_tec2_6" name="tec2" value="6" required> <label for="opcao_tec2_6">6</label>
+    <input type="radio" id="opcao_tec2_7" name="tec2" value="7" required> <label for="opcao_tec2_7">7</label>
+    <input type="radio" id="opcao_tec2_8" name="tec2" value="8" required> <label for="opcao_tec2_8">8</label>
+    <input type="radio" id="opcao_tec2_9" name="tec2" value="9" required> <label for="opcao_tec2_9">9</label>
+    <input type="radio" id="opcao_tec2_10" name="tec2" value="10" required> <label for="opcao_tec2_10">10</label>
+
+    <p>Questão 21: São adotados tecnologias e procedimentos para garantir a segurança de recursos humanos e físicos, bem como a proteção de dados acadêmicos contra acesso não autorizado?</p>
+    <input type="radio" id="opcao_tec3_0" name="tec3" value="0" required> <label for="opcao_tec3_0">0</label>
+    <input type="radio" id="opcao_tec3_1" name="tec3" value="1" required> <label for="opcao_tec3_1">1</label>
+    <input type="radio" id="opcao_tec3_2" name="tec3" value="2" required> <label for="opcao_tec3_2">2</label>
+    <input type="radio" id="opcao_tec3_3" name="tec3" value="3" required> <label for="opcao_tec3_3">3</label>
+    <input type="radio" id="opcao_tec3_4" name="tec3" value="4" required> <label for="opcao_tec3_4">4</label>
+    <input type="radio" id="opcao_tec3_5" name="tec3" value="5" required> <label for="opcao_tec3_5">5</label>
+    <input type="radio" id="opcao_tec3_6" name="tec3" value="6" required> <label for="opcao_tec3_6">6</label>
+    <input type="radio" id="opcao_tec3_7" name="tec3" value="7" required> <label for="opcao_tec3_7">7</label>
+    <input type="radio" id="opcao_tec3_8" name="tec3" value="8" required> <label for="opcao_tec3_8">8</label>
+    <input type="radio" id="opcao_tec3_9" name="tec3" value="9" required> <label for="opcao_tec3_9">9</label>
+    <input type="radio" id="opcao_tec3_10" name="tec3" value="10" required> <label for="opcao_tec3_10">10</label>
+
+
+    <p>Questão 22: A universidade oferece oportunidades de capacitação para adquirir habilidades técnicas e gerenciais relacionadas aos conceitos e tecnologias da Indústria 4.0?</p>
+    <input type="radio" id="opcao_tec4_0" name="tec4" value="0" required> <label for="opcao_tec4_0">0</label>
+    <input type="radio" id="opcao_tec4_1" name="tec4" value="1" required> <label for="opcao_tec4_1">1</label>
+    <input type="radio" id="opcao_tec4_2" name="tec4" value="2" required> <label for="opcao_tec4_2">2</label>
+    <input type="radio" id="opcao_tec4_3" name="tec4" value="3" required> <label for="opcao_tec4_3">3</label>
+    <input type="radio" id="opcao_tec4_4" name="tec4" value="4" required> <label for="opcao_tec4_4">4</label>
+    <input type="radio" id="opcao_tec4_5" name="tec4" value="5" required> <label for="opcao_tec4_5">5</label>
+    <input type="radio" id="opcao_tec4_6" name="tec4" value="6" required> <label for="opcao_tec4_6">6</label>
+    <input type="radio" id="opcao_tec4_7" name="tec4" value="7" required> <label for="opcao_tec4_7">7</label>
+    <input type="radio" id="opcao_tec4_8" name="tec4" value="8" required> <label for="opcao_tec4_8">8</label>
+    <input type="radio" id="opcao_tec4_9" name="tec4" value="9" required> <label for="opcao_tec4_9">9</label>
+    <input type="radio" id="opcao_tec4_10" name="tec4" value="10" required> <label for="opcao_tec4_10">10</label>
+
+    <p>Questão 23: A universidade utiliza tecnologia de análises de dados para melhorar a satisfação dos alunos e da comunidade acadêmica?</p>
+    <input type="radio" id="opcao_tec5_0" name="tec5" value="0" required> <label for="opcao_tec5_0">0</label>
+    <input type="radio" id="opcao_tec5_1" name="tec5" value="1" required> <label for="opcao_tec5_1">1</label>
+    <input type="radio" id="opcao_tec5_2" name="tec5" value="2" required> <label for="opcao_tec5_2">2</label>
+    <input type="radio" id="opcao_tec5_3" name="tec5" value="3" required> <label for="opcao_tec5_3">3</label>
+    <input type="radio" id="opcao_tec5_4" name="tec5" value="4" required> <label for="opcao_tec5_4">4</label>
+    <input type="radio" id="opcao_tec5_5" name="tec5" value="5" required> <label for="opcao_tec5_5">5</label>
+    <input type="radio" id="opcao_tec5_6" name="tec5" value="6" required> <label for="opcao_tec5_6">6</label>
+    <input type="radio" id="opcao_tec5_7" name="tec5" value="7" required> <label for="opcao_tec5_7">7</label>
+    <input type="radio" id="opcao_tec5_8" name="tec5" value="8" required> <label for="opcao_tec5_8">8</label>
+    <input type="radio" id="opcao_tec5_9" name="tec5" value="9" required> <label for="opcao_tec5_9">9</label>
+    <input type="radio" id="opcao_tec5_10" name="tec5" value="10" required> <label for="opcao_tec5_10">10</label>
+
+    <p>Questão 24: Na sua percepção a transformação digital para a Indústria 4.0 poderia melhorar a competitividade da universidade no cenário internacional?</p>
+    <input type="radio" id="opcao_tec6_0" name="tec6" value="0" required> <label for="opcao_tec6_0">0</label>
+    <input type="radio" id="opcao_tec6_1" name="tec6" value="1" required> <label for="opcao_tec6_1">1</label>
+    <input type="radio" id="opcao_tec6_2" name="tec6" value="2" required> <label for="opcao_tec6_2">2</label>
+    <input type="radio" id="opcao_tec6_3" name="tec6" value="3" required> <label for="opcao_tec6_3">3</label>
+    <input type="radio" id="opcao_tec6_4" name="tec6" value="4" required> <label for="opcao_tec6_4">4</label>
+    <input type="radio" id="opcao_tec6_5" name="tec6" value="5" required> <label for="opcao_tec6_5">5</label>
+    <input type="radio" id="opcao_tec6_6" name="tec6" value="6" required> <label for="opcao_tec6_6">6</label>
+    <input type="radio" id="opcao_tec6_7" name="tec6" value="7" required> <label for="opcao_tec6_7">7</label>
+    <input type="radio" id="opcao_tec6_8" name="tec6" value="8" required> <label for="opcao_tec6_8">8</label>
+    <input type="radio" id="opcao_tec6_9" name="tec6" value="9" required> <label for="opcao_tec6_9">9</label>
+    <input type="radio" id="opcao_tec6_10" name="tec6" value="10" required> <label for="opcao_tec6_10">10</label>
+    <br>
+
+      <!-- Botão para enviar respostas -->
+        <button type="submit" class="btn btn-success"> Enviar Respostas</button>
+    </form>
+        <!-- Botão para gerar o gráfico com todas as respostas -->
+    <br>
+    <br>
+     <form action="{{ url_for('generate_all_graph') }}" method="get">
+     <button type="submit" class="btn btn-success">Visualizar Grafico com todas as respostas</button>
+     </form>
+        <!-- Botão para gerar o gráfico de Distribuição -->
+      <br>
+     <form action="{{ url_for('distribution_chart') }}" method="get">
+     <button type="submit" class="btn btn-success">Visualizar Grafico de Distribuição</button>
+     </form>
+     <br>
+     <br>
+    <H2>Gráfico Radar por Setor</H2>
+     <!-- Botões para gerar o gráfico Radar por setor -->
+    <form action="{{ url_for('radar_chart', setor='Pro-Reitoria') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar Pró-Reitoria</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='GAP') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar GAP</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='GGE') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar GGE</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='GPGP') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar GPGP</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='ICBS') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar ICBS</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='ICET') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar ICET</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='ICHS') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar ICHS</button>
+    </form>
+
+    <form action="{{ url_for('radar_chart', setor='Prefeitura') }}" method="get" class="d-inline-block">
+        <button type="submit" class="btn btn-success">Ver Gráfico Radar Prefeitura</button>
+    </form>
+    <br>
+    <script>
+            function validateForm() {
+            // Obtenha todos os campos obrigatórios
+            var requiredFields = document.querySelectorAll('[required]');
+
+            // Verifique se cada campo foi preenchido
+            for (var i = 0; i < requiredFields.length; i++) {
+                if (requiredFields[i].value.trim() === '') {
+                    // Se algum campo estiver em branco, exiba a mensagem de erro
+                    alert('Por favor, responda a todas as perguntas.');
+                    return false; // Impede o envio do formulário
+                }
+            }
+
+            return true; // Permite o envio do formulário se todos os campos foram preenchidos
+            }
+    </script>
+    <script>
+        // Função para aplicar estilos CSS aos elementos do formulário
+        function aplicarEstilos() {
+            var formulario = document.getElementById('meuFormulario');
+            var inputs = formulario.getElementsByTagName('input');
+
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].style.backgroundColor = 'lightblue';  // Altere para o estilo desejado
+                inputs[i].style.padding = '5px';  // Altere para o estilo desejado
+                // Adicione mais estilos conforme necessário
+            }
+        }
+
+        // Chamada da função ao carregar a página
+        window.onload = aplicarEstilos;
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    </body>
+</html>
