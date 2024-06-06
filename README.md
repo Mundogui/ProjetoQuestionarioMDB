@@ -17,18 +17,16 @@ O objetivo principal deste projeto é propor um modelo de prontidão digital par
 
 Minha abordagem de pesquisa envolve uma combinação de revisão de literatura, análise de conteúdo qualitativa e desenvolvimento de questionários. 
 
-![Metodologia de Pesquisa]((https://prontidaodigital.pythonanywhere.com/))
+![Metodologia de Pesquisa](https://prontidaodigital.pythonanywhere.com/)
 
 1. **Revisão de Literatura:** Análise de artigos acadêmicos, livros e outros recursos para identificar os elementos essenciais da prontidão digital e as tecnologias da Indústria 4.0 relevantes para as universidades.
-2. **Análise de Conteúdo Qualitativa:** Estudo de dados qualitativos coletados de entrevistas, grupos focais e outros métodos para identificar padrões e insights sobre a prontidão digital.
+2. **Análise de Conteúdo Qualitativa:** Estudo de dados qualitativos coletados de questionários, grupos focais e outros métodos para identificar padrões e insights sobre a prontidão digital.
 3. **Desenvolvimento de Questionários:** Criação de instrumentos de medida para avaliar a prontidão digital das universidades com base nos elementos identificados na revisão de literatura e análise de conteúdo.
 
 ## Estrutura do Repositório
 
-- **/docs:** Documentação detalhada do projeto, incluindo metodologia, revisão de literatura, e resultados.
+- **/Templates:** Documentação detalhada do projeto.
 - **/src:** Código-fonte da aplicação web preliminar para medir a prontidão digital.
-- **/data:** Conjuntos de dados utilizados para análise e desenvolvimento dos questionários.
-- **/results:** Resultados das avaliações de prontidão digital nas universidades.
 
 ## Como Contribuir
 
@@ -51,11 +49,11 @@ Este repositório faz parte do meu projeto de mestrado na Universidade Na Univer
 
 
 
-![Arquitetura do Protótipo](https://via.placeholder.com/600x300?text=Arquitetura+do+Protótipo+da+Aplicação+Web)
+![Arquitetura do Protótipo](https://www.publicdomainpictures.net/pictures/330000/velka/technology-2020-15851520000wf.jpg)
 
-![Dashboards e Visualizações](https://via.placeholder.com/600x300?text=Exemplos+de+Dashboards+e+Visualizações)
+![Dashboards e Visualizações]https://upload.wikimedia.org/wikipedia/commons/a/ae/Digital_transformation.webp
 
-![Modelo de Prontidão Digital](https://via.placeholder.com/600x300?text=Diagrama+do+Modelo+de+Prontidão+Digital)
+![Modelo de Prontidão Digital](https://www.publicdomainpictures.net/pictures/560000/velka/digitale-transformation-1703238796NiE.jpg)
 
 
 
