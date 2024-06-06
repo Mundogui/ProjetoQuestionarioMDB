@@ -17,7 +17,7 @@ O objetivo principal deste projeto é propor um modelo de prontidão digital par
 
 Minha abordagem de pesquisa envolve uma combinação de revisão de literatura, análise de conteúdo qualitativa e desenvolvimento de questionários. 
 
-![Metodologia de Pesquisa](https://via.placeholder.com/600x300?text=Diagrama+de+Fluxo+da+Metodologia+de+Pesquisa)
+![Metodologia de Pesquisa]((https://prontidaodigital.pythonanywhere.com/))
 
 1. **Revisão de Literatura:** Análise de artigos acadêmicos, livros e outros recursos para identificar os elementos essenciais da prontidão digital e as tecnologias da Indústria 4.0 relevantes para as universidades.
 2. **Análise de Conteúdo Qualitativa:** Estudo de dados qualitativos coletados de entrevistas, grupos focais e outros métodos para identificar padrões e insights sobre a prontidão digital.
